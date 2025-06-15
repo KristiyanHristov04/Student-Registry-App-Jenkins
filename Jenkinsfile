@@ -12,21 +12,21 @@ pipeline {
         stage('Install Dependencies') {
             steps {
                 echo '📦 Installing dependencies...'
-                sh 'npm install'
+                bat 'npm install'
             }
         }
 
         stage('Start Application') {
             steps {
                 echo '🚀 Starting application in background...'
-                sh 'npm start &'
+                bat 'npm start &'
             }
         }
 
         stage('Run Tests') {
             steps {
                 echo '🧪 Running tests...'
-                sh 'npm test'
+                bat 'npm test'
             }
         }
     }

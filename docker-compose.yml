@@ -3,6 +3,6 @@ services:
   app:
     image: dilarcheto/studentregistry
     ports:
-      - "8081:8081
+      - "8081:8081"
     environment:
       - NODE_ENV=production
